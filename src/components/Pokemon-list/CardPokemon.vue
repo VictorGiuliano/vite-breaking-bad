@@ -2,7 +2,7 @@
 export default {
     name: 'CardPokemon',
     props: {
-        _id: String,
+        id: String,
         number: Number,
         type1: String,
         type2: String,
@@ -50,8 +50,12 @@ export default {
         border-radius: 50%;
     }
 
+    div {
+        padding: 5px 0;
+    }
+
     p {
-        padding: 0.52rem 0;
+        padding: 0.2rem 0;
     }
 }
 </style>

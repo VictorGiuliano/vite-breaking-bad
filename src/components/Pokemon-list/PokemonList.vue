@@ -11,8 +11,8 @@ export default {
 </script>
 <template>
     <div class="row">
-        <card-pokemon v-for="pokemon in store.pokemons" key:pokemon._id :Name="pokemon.name"
-            :imageUrl="pokemon.imageUrl" :id="pokemon._id" :number="pokemon.number" :type1="pokemon.type1"
+        <card-pokemon v-for="pokemon in store.pokemons" :id="pokemon.id" :Name="pokemon.name"
+            :imageUrl="pokemon.imageUrl" :number="pokemon.number" :type1="pokemon.type1"
             :type2="pokemon.type2"></card-pokemon>
 
     </div>
