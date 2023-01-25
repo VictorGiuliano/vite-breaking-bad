@@ -9,13 +9,21 @@ export default {
         return {
             array: store.PokemonType
         }
+    },
+    methods: {
+        selectValue() {
+            console.log('Selezionato un valore')
+        },
+        erase() {
+            console.log('premuto il pulsante')
+        }
     }
 }
 </script>
 <template>
     <main>
         <div class="container">
-            <select-action :arrayTypes="array"></select-action>
+            <select-action :arrayTypes="array" @chose-value="selectValue" @press-button="erase"></select-action>
             <PokemonList />
         </div>
     </main>
