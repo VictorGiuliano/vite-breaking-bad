@@ -21,5 +21,5 @@ export const store = reactive({
         "Fire",
         "Fairy",
         "Steel"
-    ]
+    ],
 });

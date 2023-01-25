@@ -1,21 +1,17 @@
 <script>
-import { store } from '../../data/store';
 export default {
     name: 'Selection',
-    data() {
-        return {
-            store
-        }
+    props: {
+        arrayTypes: Array
     }
 }
 </script>
 <template>
-    <select class="form-control">
-        <option selected value="">-</option>
-        <option v-for="type in store.PokemonType">
-            {{ type }}
-        </option>
-    </select>
-    <input type="submit" value="Submit">
-
+    <form>
+        <select class="form-control">
+            <option selected value="">-</option>
+            <option v-for="type in arrayTypes">{{ type }}</option>
+        </select>
+        <input type="submit" value="Submit" />
+    </form>
 </template>

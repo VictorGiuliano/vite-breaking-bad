@@ -14,7 +14,7 @@ export default {
 </script>
 <template>
     <div class="column">
-        <div class="card">
+        <div class="card" :class="color">
             <img :src="imageUrl" :alt="Name">
             <div class="text">
                 <p>{{ number }}</p>

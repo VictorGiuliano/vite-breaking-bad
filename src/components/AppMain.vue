@@ -7,7 +7,7 @@ export default {
     components: { PokemonList, SelectAction },
     data() {
         return {
-            store
+            array: store.PokemonType
         }
     }
 }
@@ -15,7 +15,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <select-action> </select-action>
+            <select-action :arrayTypes="array"></select-action>
             <PokemonList />
         </div>
     </main>
