@@ -16,10 +16,10 @@ export default {
     <div class="column">
         <div class="card">
             <img :src="imageUrl" :alt="Name">
-            <p>{{ number }}</p>
-            <p>{{ Name }}</p>
-            <div>
-                <p>{{ type1 }}</p><span>{{ type2 }}</span>
+            <div class="text">
+                <p>{{ number }}</p>
+                <p>{{ Name }}</p>
+                <p>{{ type1 }}</p>
             </div>
         </div>
     </div>
@@ -41,13 +41,32 @@ export default {
     background-color: white;
     border: 1px solid black;
     border-radius: 5%;
+    min-height: 300px;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &.green {
+        background-color: green;
+    }
+
+    &.red {
+        background-color: red;
+    }
+
+    &.blu {
+        background-color: aqua;
+    }
 
     img {
         display: block;
 
         max-height: 100%;
         max-width: 100%;
-        border-radius: 50%;
+        border-radius: 30%;
     }
 
     div {
